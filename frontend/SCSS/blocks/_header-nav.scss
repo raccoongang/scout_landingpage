@@ -1,0 +1,14 @@
+.header-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    margin-left: -191px;
+    height: 100%;
+    margin-top: -31px;
+    margin-bottom: -33px;
+  }
+  &__link {
+    color: $color-light-blue;
+  }
+}

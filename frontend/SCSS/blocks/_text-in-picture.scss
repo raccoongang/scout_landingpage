@@ -1,0 +1,21 @@
+.text-in-picture {
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  &__text {
+    font: 18px/23px $font_light;
+  }
+  &__header {
+    font: 56px/70px $font_bold;
+  }
+  &__paragraph {
+    font: 28px/35px $font_bold;
+    max-width: 325px;
+  }
+}

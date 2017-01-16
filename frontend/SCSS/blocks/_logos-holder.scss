@@ -1,0 +1,16 @@
+.logos-holder {
+  height: 80px;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18px 18.5px 0 18.5px;
+    border-color: $color-white transparent transparent transparent;
+    bottom: -18px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}

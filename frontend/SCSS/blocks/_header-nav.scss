@@ -2,13 +2,32 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    width: 310px;
+    align-items: center;
+    width: 340px;
     margin-left: -191px;
     height: 100%;
-    margin-top: -31px;
-    margin-bottom: -33px;
+  }
+  &__item {
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   &__link {
     color: $color-light-blue;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: $color-light-blue;
+      color: $color-white;
+    }
+  }
+}
+
+@include width-1200 {
+  .header-nav__list {
+    margin-left: 0;
   }
 }

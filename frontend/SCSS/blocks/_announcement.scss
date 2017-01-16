@@ -1,6 +1,17 @@
 .announcement {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  &__texture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../images/textures.png);
+    opacity: 0.5;
+  }
   &__list {
     display: flex;
     width: 100vw;

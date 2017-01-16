@@ -40,8 +40,19 @@
     align-items: center;
     font-size: 16px;
     color: $color-light-blue;
-    padding: 33px 0 31px;
+
     width: 1140px;
+    height: 105px;
     margin: 0 auto;
+  }
+}
+
+@include width-1200 {
+  .header {
+    &__main,&__headline {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
   }
 }

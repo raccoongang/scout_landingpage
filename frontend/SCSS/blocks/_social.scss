@@ -7,6 +7,9 @@
     width: 20px;
     height: 16px;
     fill: #BCBCBC;
+    &:hover {
+      fill: $color-white;
+    }
   }
   &__list {
     display: flex;

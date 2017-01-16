@@ -4,6 +4,7 @@
   box-shadow: 0 0 0 2px $color-light-blue;
   color: $color-light-blue;
   font-size: 13px;
+  white-space: nowrap;
   &:hover {
     background: $color-light-blue;
     color: $color-white;

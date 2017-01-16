@@ -89,6 +89,8 @@ body {
     width: 20px;
     height: 16px;
     fill: #BCBCBC; }
+    .social__twitter:hover, .social__facebook:hover, .social__youtube:hover {
+      fill: #fff; }
   .social__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151,9 +153,15 @@ body {
           align-items: center;
   font-size: 16px;
   color: #007db8;
-  padding: 33px 0 31px;
   width: 1140px;
+  height: 105px;
   margin: 0 auto; }
+
+@media screen and (max-width: 1220px) {
+  .header__main, .header__headline {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; } }
 
 .header-nav__list {
   display: -webkit-box;
@@ -162,14 +170,42 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 310px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 340px;
   margin-left: -191px;
+  height: 100%; }
+
+.header-nav__item {
   height: 100%;
-  margin-top: -31px;
-  margin-bottom: -33px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .header-nav__link {
-  color: #007db8; }
+  color: #007db8;
+  padding: 0 15px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header-nav__link:hover {
+    background: #007db8;
+    color: #fff; }
+
+@media screen and (max-width: 1220px) {
+  .header-nav__list {
+    margin-left: 0; } }
 
 .login-register__list {
   display: -webkit-box;
@@ -190,14 +226,25 @@ body {
   text-transform: uppercase;
   box-shadow: 0 0 0 2px #007db8;
   color: #007db8;
-  font-size: 13px; }
+  font-size: 13px;
+  white-space: nowrap; }
   .button:hover {
     background: #007db8;
     color: #fff; }
 
 .announcement {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
+  .announcement__texture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(../images/textures.png);
+    opacity: 0.5; }
   .announcement__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -338,6 +385,29 @@ body {
       margin-right: 10px;
       fill: #007db8; }
 
+@media screen and (max-width: 1220px) {
+  .articles {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; } }
+
+@media screen and (max-width: 770px) {
+  .articles__article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .articles__article:nth-child(even) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .articles__article:nth-child(even) .articles__inner-wrapper {
+        padding-left: 113px; }
+  .articles__image {
+    width: 100%;
+    height: auto; } }
+
 .subscription {
   width: 1140px;
   padding: 24px 0 20px;
@@ -365,16 +435,33 @@ body {
     background: #007db8;
     color: #fff;
     padding: 10px 13px 10px 15px;
-    margin-left: 22px; }
+    margin-left: 22px;
+    cursor: pointer; }
     .subscription__button:hover {
-      background: #461b6e;
+      background: #005a85;
       box-shadow: none;
       color: #fff; }
+  .subscription__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+
+@media screen and (max-width: 1220px) {
+  .subscription {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box; } }
 
 .footer {
   width: 1140px;
   margin: 0 auto;
   color: #7f848c; }
+
+@media screen and (max-width: 1220px) {
+  .footer {
+    width: 100%;
+    padding: 23px 15px;
+    box-sizing: border-box; } }
 
 .copyright {
   color: #7f848c;
@@ -406,3 +493,5 @@ body {
     color: #7f848c;
     text-transform: uppercase;
     font-size: 12px; }
+    .legal__link:hover {
+      text-decoration: underline; }

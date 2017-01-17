@@ -43,3 +43,16 @@
     box-sizing: border-box;
   }
 }
+
+@include phone {
+  .subscription {
+    flex-direction: column;
+    padding: 20px;
+    &__input {
+      width: 50%;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+  }
+}

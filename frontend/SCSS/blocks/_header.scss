@@ -40,7 +40,7 @@
     align-items: center;
     font-size: 16px;
     color: $color-light-blue;
-
+    position: relative;
     width: 1140px;
     height: 105px;
     margin: 0 auto;
@@ -53,6 +53,34 @@
       width: 100%;
       padding: 0 15px;
       box-sizing: border-box;
+    }
+    &__headline {
+      padding: 10px 15px 8px;
+    }
+  }
+}
+@include tablet {
+  .header {
+    &__main {
+      flex-wrap: wrap;
+      min-height: 105px;
+    }
+    &__headline {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include phone {
+  .header {
+    &__main {
+      min-height: 165px;
+    }
+    &__headline {
+      &--inner-wrapper {
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
     }
   }
 }

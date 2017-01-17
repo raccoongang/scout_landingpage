@@ -51,16 +51,25 @@
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
+    &__article {
+      align-items: center;
+    }
+    &__image {
+      height: auto;
+    }
   }
 }
 @include tablet {
   .articles {
     &__article {
       flex-direction: column;
+      .articles__inner-wrapper {
+        padding-left: 15px;
+      }
       &:nth-child(even) {
         flex-direction: column;
         .articles__inner-wrapper {
-          padding-left: 113px;
+          padding-left: 15px;
         }
       }
     }

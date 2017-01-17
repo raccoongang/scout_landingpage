@@ -59,3 +59,14 @@
     }
   }
 }
+
+@include phone {
+  .announcement {
+    &__list {
+      flex-direction: column;
+    }
+    &__texture {
+      display: none;
+    }
+  }
+}

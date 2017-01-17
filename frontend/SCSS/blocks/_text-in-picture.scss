@@ -19,3 +19,9 @@
     max-width: 325px;
   }
 }
+
+@include phone {
+  .text-in-picture {
+    padding: 0 15px;
+  }
+}

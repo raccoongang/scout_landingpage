@@ -24,6 +24,8 @@
     padding: 10px 13px 10px 15px;
     margin-left: 22px;
     cursor: pointer;
+    transition: all ease 0.3s;
+    box-shadow: none;
     &:hover {
       background: darken($color-light-blue, 10%);
       box-shadow: none;

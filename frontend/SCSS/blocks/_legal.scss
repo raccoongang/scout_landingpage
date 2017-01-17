@@ -9,6 +9,7 @@
     color: $color-gray;
     text-transform: uppercase;
     font-size: 12px;
+    transition: all ease 0.3s;
     &:hover {
       text-decoration: underline;
     }

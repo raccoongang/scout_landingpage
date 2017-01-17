@@ -80,7 +80,9 @@ body {
   box-shadow: 0 0 0 2px #007db8;
   color: #007db8;
   font-size: 13px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
   .button:hover {
     background: #007db8;
     color: #fff; }
@@ -99,7 +101,9 @@ body {
   .social__twitter, .social__facebook, .social__youtube {
     width: 20px;
     height: 16px;
-    fill: #BCBCBC; }
+    fill: #BCBCBC;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
     .social__twitter:hover, .social__facebook:hover, .social__youtube:hover {
       fill: #fff; }
   .social__list {
@@ -138,7 +142,9 @@ body {
             justify-content: space-between; }
 
 .header__email {
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
   .header__email:hover {
     text-decoration: underline; }
 
@@ -188,7 +194,8 @@ body {
 
 @media screen and (max-width: 550px) {
   .header__main {
-    min-height: 165px; }
+    min-height: 165px;
+    height: auto; }
   .header__headline--inner-wrapper {
     max-width: 100%;
     margin-bottom: 15px; } }
@@ -228,7 +235,9 @@ body {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
     .header-nav__link:hover {
       background: #007db8;
       color: #fff; }
@@ -309,6 +318,16 @@ body {
           width: 30px;
           height: 30px; } }
 
+@media screen and (max-width: 550px) {
+  .header-nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+    .header-nav__mobile-trigger {
+      right: 15px;
+      top: 28%;
+      left: auto; } }
+
 .login-register__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,20 +338,22 @@ body {
   margin-right: 6px; }
 
 .login-register__link {
-  color: #7f848c;
+  color: #007db8;
   font-size: 13px;
   margin-left: 7px; }
 
 @media screen and (max-width: 550px) {
   .login-register__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 70%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%; }
   .login-register__link {
     padding: 10px 5px;
     font-size: 11px; } }
@@ -349,6 +370,15 @@ body {
     height: 100%;
     z-index: 1;
     background: url(../images/textures.png);
+    opacity: 0.5; }
+  .announcement__layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #007db8;
     opacity: 0.5; }
   .announcement__list {
     display: -webkit-box;
@@ -382,7 +412,7 @@ body {
         height: 100%;
         background: url(../images/library-869061_1920.jpg) no-repeat;
         background-size: cover;
-        opacity: 0.7;
+        opacity: 0.5;
         z-index: 1; }
     .announcement__link--small {
       position: relative; }
@@ -395,7 +425,7 @@ body {
         background: url("../images/guys.jpg") no-repeat;
         background-size: cover;
         z-index: 1;
-        opacity: 0.7; }
+        opacity: 0.5; }
 
 @media screen and (max-width: 550px) {
   .announcement__list {
@@ -448,7 +478,7 @@ body {
     border-style: solid;
     border-width: 18px 18.5px 0 18.5px;
     border-color: #fff transparent transparent transparent;
-    bottom: -18px;
+    bottom: -17px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
@@ -564,7 +594,10 @@ body {
     color: #fff;
     padding: 10px 13px 10px 15px;
     margin-left: 22px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    box-shadow: none; }
     .subscription__button:hover {
       background: #005a85;
       box-shadow: none;
@@ -632,6 +665,8 @@ body {
   .legal__link {
     color: #7f848c;
     text-transform: uppercase;
-    font-size: 12px; }
+    font-size: 12px;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
     .legal__link:hover {
       text-decoration: underline; }

@@ -5,6 +5,7 @@
   color: $color-light-blue;
   font-size: 13px;
   white-space: nowrap;
+  transition: all ease 0.3s;
   &:hover {
     background: $color-light-blue;
     color: $color-white;

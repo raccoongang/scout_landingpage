@@ -20,6 +20,7 @@
   }
   &__email {
     color: $color-white;
+    transition: all ease 0.3s;
     &:hover {
       text-decoration: underline;
     }
@@ -75,6 +76,7 @@
   .header {
     &__main {
       min-height: 165px;
+      height: auto;
     }
     &__headline {
       &--inner-wrapper {

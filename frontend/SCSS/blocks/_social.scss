@@ -7,6 +7,7 @@
     width: 20px;
     height: 16px;
     fill: #BCBCBC;
+    transition: all ease 0.3s;
     &:hover {
       fill: $color-white;
     }

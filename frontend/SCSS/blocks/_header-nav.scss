@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all ease 0.3s;
     &:hover {
       background: $color-light-blue;
       color: $color-white;
@@ -109,6 +110,11 @@
 }
 @include phone {
   .header-nav {
-
+    order: 2;
+    &__mobile-trigger {
+      right: 15px;
+      top: 28%;
+      left: auto;
+    }
   }
 }

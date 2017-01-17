@@ -7,7 +7,7 @@
   align-items: center;
   text-transform: uppercase;
   &--wrapper {
-    background: #626262;
+    background: $color-gray-2;
   }
   &__text {
     font: 16px/21px $font_light;

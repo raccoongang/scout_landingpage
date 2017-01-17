@@ -658,7 +658,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #6c6c6c;
+  border-bottom: 1px solid #626262;
   padding: 52px 0 42px;
   text-transform: uppercase;
   margin-bottom: 27px; }

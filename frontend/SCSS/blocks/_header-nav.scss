@@ -1,5 +1,4 @@
 .header-nav {
-
   margin-left: -191px;
   height: 100%;
   &__list {
@@ -7,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     width: 340px;
-
     height: 100%;
   }
   &__item {
@@ -33,7 +31,7 @@
     cursor: pointer;
     width: 40px;
     height: 30px;
-    background: linear-gradient(to bottom, rgba(0,125,184,1) 0%,rgba(0,125,184,1) 20%,rgba(0,125,184,0) 20%,rgba(0,125,184,0) 40%,rgba(0,125,184,1) 40%,rgba(0,125,184,1) 60%,rgba(0,125,184,0) 60%,rgba(0,125,184,0) 80%,rgba(0,125,184,1) 80%,rgba(0,125,184,1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 125, 184, 1) 0%, rgba(0, 125, 184, 1) 20%, rgba(0, 125, 184, 0) 20%, rgba(0, 125, 184, 0) 40%, rgba(0, 125, 184, 1) 40%, rgba(0, 125, 184, 1) 60%, rgba(0, 125, 184, 0) 60%, rgba(0, 125, 184, 0) 80%, rgba(0, 125, 184, 1) 80%, rgba(0, 125, 184, 1) 100%);
     svg {
       display: none;
       fill: $color-light-blue;
@@ -49,18 +47,14 @@
     left: 0;
     margin: 0;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
   }
-}
 
-@include width-1200 {
-  .header-nav {
+  @include width-1200 {
     margin-left: 0;
   }
-}
 
-@include  tablet {
-  .header-nav {
+  @include tablet {
     order: -1;
     margin-left: 0;
     display: flex;
@@ -107,9 +101,8 @@
       }
     }
   }
-}
-@include phone {
-  .header-nav {
+
+  @include phone {
     order: 2;
     &__mobile-trigger {
       right: 15px;

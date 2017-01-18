@@ -8,6 +8,10 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+  @include tablet {
+    padding: 0 15px;
+  }
+
   &__text {
     font: 18px/23px $font_light;
   }
@@ -17,10 +21,5 @@
   &__paragraph {
     font: 28px/35px $font_bold;
     max-width: 325px;
-  }
-}
-@include tablet {
-  .text-in-picture {
-    padding: 0 15px;
   }
 }

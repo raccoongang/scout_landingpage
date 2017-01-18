@@ -9,11 +9,7 @@
     font-size: 13px;
     margin-left: 7px;
   }
-}
-
-@include phone {
-  .login-register {
-
+  @include phone {
     &__list {
       justify-content: center;
       align-items: center;

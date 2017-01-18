@@ -2,11 +2,12 @@
   margin-top: 2px;
   display: flex;
   width: 235px;
-
-  &__twitter,&__facebook,&__youtube {
+  &__twitter,
+  &__facebook,
+  &__youtube {
     width: 20px;
     height: 16px;
-    fill: #BCBCBC;
+    fill: #bcbcbc;
     transition: all ease 0.3s;
     &:hover {
       fill: $color-white;

@@ -1,5 +1,4 @@
 .header {
-
   &__headline {
     display: flex;
     justify-content: space-between;
@@ -46,11 +45,10 @@
     height: 105px;
     margin: 0 auto;
   }
-}
 
-@include width-1200 {
-  .header {
-    &__main,&__headline {
+  @include width-1200 {
+    &__main,
+    &__headline {
       width: 100%;
       padding: 0 15px;
       box-sizing: border-box;
@@ -59,9 +57,7 @@
       padding: 10px 15px 8px;
     }
   }
-}
-@include tablet {
-  .header {
+  @include tablet {
     &__main {
       flex-wrap: wrap;
       min-height: 105px;
@@ -70,10 +66,8 @@
       flex-wrap: wrap;
     }
   }
-}
 
-@include phone {
-  .header {
+  @include phone {
     &__main {
       min-height: 165px;
       height: auto;
@@ -86,3 +80,4 @@
     }
   }
 }
+

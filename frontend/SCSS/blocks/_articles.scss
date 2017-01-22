@@ -4,7 +4,6 @@
   margin: 0 auto;
   flex-direction: column;
   padding: 84px 0 78px;
-
   @include width-1200 {
     width: 100%;
     padding: 0 15px;
@@ -17,6 +16,12 @@
     padding: 46px 0 46px 113px;
     .articles__article:nth-child(even) & {
       padding-left: 0;
+      @include tablet {
+        padding-left: 15px;
+      }
+    }
+    @include tablet {
+      padding-left: 15px;
     }
   }
   &__article {
@@ -26,27 +31,19 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
-
     @include width-1200 {
       align-items: center;
     }
     @include tablet {
       flex-direction: column;
-      .articles__inner-wrapper {
-        padding-left: 15px;
-      }
       &:nth-child(even) {
         flex-direction: column;
-        .articles__inner-wrapper {
-          padding-left: 15px;
-        }
       }
     }
   }
   &__image {
     height: 320px;
     width: 50%;
-
     @include width-1200 {
       height: auto;
     }

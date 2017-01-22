@@ -8,15 +8,30 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
+    @include width-1200 {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    @include phone {
+      flex-direction: column;
+      padding: 20px;
+    }
   }
   &__text {
     font: 16px/21px $font_light;
+    @include phone {
+      margin-bottom: 15px;
+    }
   }
   &__input {
     height: 35px;
     padding: 5px;
     box-sizing: border-box;
     width: 235px;
+    @include phone {
+      width: 50%;
+    }
   }
   &__button {
     background: $color-light-blue;
@@ -34,25 +49,5 @@
   }
   &__form {
     flex: 0 0 auto;
-  }
-
-  @include width-1200 {
-    &__inner {
-      width: 100%;
-      padding: 0 15px;
-      box-sizing: border-box;
-    }
-  }
-  @include phone {
-    &__inner {
-      flex-direction: column;
-      padding: 20px;
-    }
-    &__input {
-      width: 50%;
-    }
-    &__text {
-      margin-bottom: 15px;
-    }
   }
 }

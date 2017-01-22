@@ -7,11 +7,24 @@
     align-items: center;
     width: 340px;
     height: 100%;
+    @include tablet {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      background: $color-dark-blue;
+      z-index: 9;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
   }
   &__item {
     height: 100%;
     display: flex;
     align-items: center;
+    @include tablet {
+      width: 100%;
+    }
   }
   &__link {
     color: $color-light-blue;
@@ -25,6 +38,10 @@
       background: $color-light-blue;
       color: $color-white;
     }
+    @include tablet {
+      width: 100%;
+      color: $color-white;
+    }
   }
   &__mobile-icon {
     display: none;
@@ -35,6 +52,9 @@
     svg {
       display: none;
       fill: $color-light-blue;
+    }
+    @include tablet {
+      display: block;
     }
   }
   &__mobile-trigger {
@@ -48,39 +68,7 @@
     margin: 0;
     top: 50%;
     transform: translate(0, -50%);
-  }
-
-  @include width-1200 {
-    margin-left: 0;
-  }
-
-  @include tablet {
-    order: -1;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    &__list {
-      display: none;
-      position: absolute;
-      flex-direction: column;
-      background: $color-dark-blue;
-      z-index: 9;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-    &__item {
-      width: 100%;
-    }
-    &__link {
-      width: 100%;
-      color: $color-white;
-    }
-    &__mobile-icon {
-      display: block;
-    }
-    &__mobile-trigger {
+    @include tablet {
       display: block;
       z-index: 11;
       left: 11px;
@@ -96,18 +84,26 @@
           fill: $color-white;
           width: 30px;
           height: 30px;
-
         }
       }
     }
-  }
-
-  @include phone {
-    order: 2;
-    &__mobile-trigger {
+    @include phone {
       right: 15px;
       top: 28%;
       left: auto;
     }
+  }
+  @include width-1200 {
+    margin-left: 0;
+  }
+  @include tablet {
+    order: -1;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  @include phone {
+    order: 2;
   }
 }

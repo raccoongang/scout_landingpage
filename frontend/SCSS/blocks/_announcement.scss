@@ -11,6 +11,9 @@
     z-index: 1;
     background: url(../images/textures.png);
     opacity: 0.5;
+    @include phone {
+      display: none;
+    }
   }
   &__layer {
     position: absolute;
@@ -27,6 +30,9 @@
     width: 100vw;
     justify-content: space-between;
     background: $color-gray;
+    @include phone {
+      flex-direction: column;
+    }
   }
   &__item {
     flex: 0 1 auto;
@@ -44,29 +50,17 @@
     background-size: cover;
     opacity: 0.5;
     z-index: 1;
+    .announcement__link--big & {
+      background: url(../images/library-869061_1920.jpg) no-repeat;
+    }
+    .announcement__link--small & {
+      background: url("../images/guys.jpg") no-repeat;
+    }
   }
   &__link {
     height: 360px;
     display: block;
     background-color: $color-black;
     position: relative;
-    &--big {
-      .announcement__image {
-        background: url(../images/library-869061_1920.jpg) no-repeat;
-      }
-    }
-    &--small {
-      .announcement__image {
-        background: url("../images/guys.jpg") no-repeat;
-      }
-    }
-  }
-  @include phone {
-    &__list {
-      flex-direction: column;
-    }
-    &__texture {
-      display: none;
-    }
   }
 }

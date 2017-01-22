@@ -16,6 +16,20 @@
       display: flex;
       justify-content: space-between;
     }
+    @include width-1200 {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 15px 8px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+    @include phone {
+      &--inner-wrapper {
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
   &__email {
     color: $color-white;
@@ -44,40 +58,18 @@
     width: 1140px;
     height: 105px;
     margin: 0 auto;
-  }
-
-  @include width-1200 {
-    &__main,
-    &__headline {
+    @include width-1200 {
       width: 100%;
       padding: 0 15px;
       box-sizing: border-box;
     }
-    &__headline {
-      padding: 10px 15px 8px;
-    }
-  }
-  @include tablet {
-    &__main {
+    @include tablet {
       flex-wrap: wrap;
       min-height: 105px;
     }
-    &__headline {
-      flex-wrap: wrap;
-    }
-  }
-
-  @include phone {
-    &__main {
+    @include phone {
       min-height: 165px;
       height: auto;
     }
-    &__headline {
-      &--inner-wrapper {
-        max-width: 100%;
-        margin-bottom: 15px;
-      }
-    }
   }
 }
-

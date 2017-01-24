@@ -13,12 +13,18 @@
   }
   &__text {
     font: 18px/23px $font_light;
+    width: 100%;
+    flex: 0 0 auto;
   }
   &__header {
     font: 56px/70px $font_bold;
+    width: 100%;
+    flex: 0 0 auto;
   }
   &__paragraph {
     font: 28px/35px $font_bold;
     max-width: 325px;
+    width: 100%;
+    flex: 0 0 auto;
   }
 }

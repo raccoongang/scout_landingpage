@@ -458,25 +458,19 @@ body {
   @media screen and (max-width: 770px) {
     .text-in-picture {
       padding: 0 15px; } }
+  .text-in-picture__text, .text-in-picture__header, .text-in-picture__paragraph {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    text-align: center; }
   .text-in-picture__text {
-    font: 18px/23px roboto-light, Arial, sans-serif;
-    width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto; }
+    font: 18px/23px roboto-light, Arial, sans-serif; }
   .text-in-picture__header {
-    font: 56px/70px roboto-bold, Arial, sans-serif;
-    width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto; }
+    font: 56px/70px roboto-bold, Arial, sans-serif; }
   .text-in-picture__paragraph {
     font: 28px/35px roboto-bold, Arial, sans-serif;
-    max-width: 325px;
-    width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto; }
+    max-width: 325px; }
 
 .logos-holder {
   height: 80px;

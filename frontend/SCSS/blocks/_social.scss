@@ -25,4 +25,13 @@
       margin-right: 0;
     }
   }
+  &__link {
+    width: 20px;
+    height: 16px;
+    display: block;
+    svg {
+      width: 20px;
+      height: 16px;
+    }
+  }
 }

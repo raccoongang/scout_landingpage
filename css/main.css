@@ -114,6 +114,13 @@ body {
     margin-right: 10px; }
     .social__item:last-child {
       margin-right: 0; }
+  .social__link {
+    width: 20px;
+    height: 16px;
+    display: block; }
+    .social__link svg {
+      width: 20px;
+      height: 16px; }
 
 .header__headline {
   display: -webkit-box;

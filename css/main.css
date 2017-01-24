@@ -81,8 +81,8 @@ body {
   color: #007db8;
   font-size: 13px;
   white-space: nowrap;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s; }
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
   .button:hover {
     background: #007db8;
     color: #fff; }
@@ -100,8 +100,8 @@ body {
     width: 20px;
     height: 16px;
     fill: #bcbcbc;
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s; }
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
     .social__twitter:hover, .social__facebook:hover, .social__youtube:hover {
       fill: #fff; }
   .social__list {
@@ -154,8 +154,8 @@ body {
 
 .header__email {
   color: #fff;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s; }
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s; }
   .header__email:hover {
     text-decoration: underline; }
 
@@ -252,8 +252,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s; }
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
     .header-nav__link:hover {
       background: #007db8;
       color: #fff; }
@@ -610,8 +610,8 @@ body {
     padding: 10px 13px 10px 15px;
     margin-left: 22px;
     cursor: pointer;
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s;
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
     box-shadow: none; }
     .subscription__button:hover {
       background: #005a85;
@@ -662,7 +662,7 @@ body {
     color: #7f848c;
     text-transform: uppercase;
     font-size: 12px;
-    -webkit-transition: all ease 0.3s;
-    transition: all ease 0.3s; }
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s; }
     .legal__link:hover {
       text-decoration: underline; }

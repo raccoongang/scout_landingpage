@@ -1,0 +1,31 @@
+$roboto-light: roboto-light;
+$roboto-regular: roboto-regular;
+$roboto-bold: roboto-bold;
+$roboto-thin: roboto-thin;
+
+$fonts-list: $roboto-light, $roboto-regular, $roboto-bold, $roboto-thin;
+
+//break points
+$res_550:   550px;
+$res_610:   610px;
+$res_770:   770px;
+$res_960:   960px;
+$res_1000:  1000px;
+$res_1220:  1220px;
+$res_1400:  1400px;
+
+//colors
+$color-dark-blue:       #461b6e;
+$color-light-blue:      #007db8;
+$color-gray:            #7f848c;
+$color-white:           #fff;
+$color-text-dark:       #111827;
+$color-black:           #000;
+$color-gray-2:          #626262;
+$color-light-gray:      #e6e6e6;
+
+//fonts
+$font:            roboto-regular, Arial, sans-serif;
+$font_light:      roboto-light, Arial, sans-serif;
+$font_bold:       roboto-bold, Arial, sans-serif;
+$font_thin:       roboto-thin, Arial, sans-serif;

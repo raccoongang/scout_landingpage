@@ -1,0 +1,53 @@
+.subscription {
+  background: $color-gray-2;
+  &__inner {
+    width: 1140px;
+    padding: 24px 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    @include width-1200 {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    @include phone {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+  &__text {
+    font: 16px/21px $font_light;
+    @include phone {
+      margin-bottom: 15px;
+    }
+  }
+  &__input {
+    height: 35px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 235px;
+    @include phone {
+      width: 50%;
+    }
+  }
+  &__button {
+    background: $color-light-blue;
+    color: $color-white;
+    padding: 10px 13px 10px 15px;
+    margin-left: 22px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    box-shadow: none;
+    &:hover {
+      background: darken($color-light-blue, 10%);
+      box-shadow: none;
+      color: $color-white;
+    }
+  }
+  &__form {
+    flex: 0 0 auto;
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 2px $color-light-blue;
+  color: $color-light-blue;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all ease 0.3s;
+  &:hover {
+    background: $color-light-blue;
+    color: $color-white;
+  }
+}

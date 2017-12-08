@@ -81,14 +81,21 @@ body {
   color: #007db8;
   font-size: 13px;
   white-space: nowrap;
-  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
   .button:hover {
     background: #007db8;
     color: #fff; }
 
 .wrapper {
-  width: 100%; }
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .social {
   margin-top: 2px;
@@ -100,7 +107,6 @@ body {
     width: 20px;
     height: 16px;
     fill: #bcbcbc;
-    -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s; }
     .social__twitter:hover, .social__facebook:hover, .social__youtube:hover {
       fill: #fff; }
@@ -161,7 +167,6 @@ body {
 
 .header__email {
   color: #fff;
-  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
   .header__email:hover {
     text-decoration: underline; }
@@ -279,7 +284,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s; }
     .header-nav__link:hover {
       background: #007db8;
@@ -293,7 +297,6 @@ body {
     cursor: pointer;
     width: 40px;
     height: 30px;
-    background: -webkit-linear-gradient(top, #007db8 0%, #007db8 20%, rgba(0, 125, 184, 0) 20%, rgba(0, 125, 184, 0) 40%, #007db8 40%, #007db8 60%, rgba(0, 125, 184, 0) 60%, rgba(0, 125, 184, 0) 80%, #007db8 80%, #007db8 100%);
     background: linear-gradient(to bottom, #007db8 0%, #007db8 20%, rgba(0, 125, 184, 0) 20%, rgba(0, 125, 184, 0) 40%, #007db8 40%, #007db8 60%, rgba(0, 125, 184, 0) 60%, rgba(0, 125, 184, 0) 80%, #007db8 80%, #007db8 100%); }
     .header-nav__mobile-icon svg {
       display: none;
@@ -469,7 +472,8 @@ body {
     font: 56px/70px roboto-bold, Arial, sans-serif; }
   .text-in-picture__paragraph {
     font: 28px/35px roboto-bold, Arial, sans-serif;
-    max-width: 325px; }
+    max-width: 325px;
+    color: #fff; }
 
 .logos-holder {
   height: 80px;
@@ -626,7 +630,6 @@ body {
     padding: 10px 13px 10px 15px;
     margin-left: 22px;
     cursor: pointer;
-    -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s;
     box-shadow: none; }
     .subscription__button:hover {
@@ -678,7 +681,11 @@ body {
     color: #7f848c;
     text-transform: uppercase;
     font-size: 12px;
-    -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s; }
     .legal__link:hover {
       text-decoration: underline; }
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
